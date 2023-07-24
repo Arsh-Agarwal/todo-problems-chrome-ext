@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Todo DSA/CP Problems",
+    "version": "1.0.0",
+    "author": "Arsh Agarwal",
+    "description": "Chrome extension to bookmark problems from Codeforces.",
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "matches": ["https://codeforces.com/*/problem/*"],
+        "js": ["content.js"]
+    }],
+    "web_accessible_resources": [
+        {
+            "matches": ["https://codeforces.com/*"],
+            "resources": [
+                "assets/bookmark.png",
+                "assets/play.png",
+                "assets/delete.png"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": {},
+        "default_popup": "index.html",
+        "default_title": "TODO Problems"
+    }
+}
