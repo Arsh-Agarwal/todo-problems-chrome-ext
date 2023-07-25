@@ -4,12 +4,12 @@ A tool to bookmark Coding questions from various websites.
 # Features
 You will find a button near the title of the problem to bookmark it and maintain as a todolist. <br>
 Currently supports -
-* codeforces.com
+* [Codeforces](codeforces.com)
 * interviewbit.com
 * spoj.com
 * leetcode.com
 * atcoder.jp
-* codechef.com
+* codechef.com <br>
 These can be accessed by clicking the extension icon.
 
 # How to Use
