@@ -10,6 +10,7 @@ Currently supports -
 * [Leetcode](leetcode.com)
 * [AtCoder](atcoder.jp)
 * [Codechef](codechef.com) <br>
+
 These can be accessed by clicking the extension icon.
 
 # How to Use
