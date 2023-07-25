@@ -27,7 +27,12 @@ const onDelete = async e => {
     console.log("deleting bm url: ", url);
     
     let curBMs = await fetchBMs();
-    curBMs = curBMs.filter((bm) => {bm.url!=url});
+    let temp = []
+    for(let i = 0; i < curBMs.length; i++){
+        if(curBMs[i].url===url) continue;
+        temp.push(curBMs[i]);
+    }
+    curBMs = temp;
     chrome.storage.sync.set({[problemListKey]: JSON.stringify(curBMs)});
     viewBMs(curBMs);
 };

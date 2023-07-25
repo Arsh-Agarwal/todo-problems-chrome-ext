@@ -12,12 +12,17 @@
         "service_worker": "background.js"
     },
     "content_scripts": [{
-        "matches": ["https://codeforces.com/*/problem/*"],
+        "matches": ["https://*.codeforces.com/*/problem/*", 
+                    "https://*.codechef.com/problems/*", 
+                    "https://leetcode.com/*problems*", 
+                    "https://atcoder.jp/*tasks/*",
+                    "https://www.interviewbit.com/problems/*", 
+                    "https://www.spoj.com/problems/*"],
         "js": ["content.js"]
     }],
     "web_accessible_resources": [
         {
-            "matches": ["https://codeforces.com/*"],
+            "matches": ["<all_urls>"],
             "resources": [
                 "assets/bookmark.png",
                 "assets/play.png",
